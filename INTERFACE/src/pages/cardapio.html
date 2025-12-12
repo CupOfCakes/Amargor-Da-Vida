@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amargor da Vida/cardapio</title>
+    <link rel="stylesheet" href="../compartilhados/css/resete-e-body.css">
+    <link rel="stylesheet" href="../compartilhados/css/variaveis.css">
+    <link rel="stylesheet" href="../styles/cardapio.css">
+    <link rel="stylesheet" href="../compartilhados/css/navbar.css">
+    <link rel="stylesheet" href="../compartilhados/css/direitos.css">
+    <link rel="stylesheet" href="../compartilhados/css/banner.css">
+    <link rel="stylesheet" href="../compartilhados/css/cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<script>
+    fetch("../compartilhados/html/navbar.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("navbar").innerHTML = html;
+        });
+</script>
+
+<header class="hero-small">
+    <div class="container">
+        <h1>ESCOLHA SEU VENENO</h1>
+        <p>Tudo feito com ingredientes questionáveis e má vontade.</p>
+    </div>
+</header>
+
+<main class="menu-destaques">
+    <div class="cardapio-container"></div>
+</main>
+
+<script src="../js/cardapio.js"></script>
+<script src="../js/pedido.js"></script>
+
+<footer id="footer"></footer>
+
+<script>
+    fetch("../compartilhados/html/direitos.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+</script>
+
+</body>
+</html>

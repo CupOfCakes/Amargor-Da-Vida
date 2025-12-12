@@ -1,0 +1,45 @@
+/* --- HERO SECTION (Banner Principal) --- */
+.hero {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 0px var(--cafe-escuro);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: white;
+    color: var(--cafe-escuro);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    border: 2px solid white;
+}
+
+/* --- HERO SMALL (Para páginas internas) --- */
+.hero-small {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: none;
+}
+
+.hero-small h1 { font-size: 2.5rem; }
+.hero-small p { color: #ccc; }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amargor da Vida/contato</title>
+    <link rel="stylesheet" href="../compartilhados/css/resete-e-body.css">
+    <link rel="stylesheet" href="../compartilhados/css/variaveis.css">
+    <link rel="stylesheet" href="../styles/contato.css">
+    <link rel="stylesheet" href="../compartilhados/css/navbar.css">
+    <link rel="stylesheet" href="../compartilhados/css/direitos.css">
+    <link rel="stylesheet" href="../compartilhados/css/banner.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<script>
+    fetch("../compartilhados/html/navbar.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("navbar").innerHTML = html;
+        });
+</script>
+
+<header class="hero-small">
+    <div class="container">
+        <h1>FALE COM A GENTE</h1>
+        <p>Ou apareça aqui, se não tiver nada melhor pra fazer.</p>
+    </div>
+</header>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <div class="info-card">
+                    <h2>Nossa Toca</h2>
+                    <p class="address-text">
+                        <strong>Endereço:</strong><br>
+                        Rua da Desilusão, 404<br>
+                        Centro - Aquele Lugar, MG<br>
+                        <small>(Do lado da farmácia, pra já comprar remédio pra dor de cabeça)</small>
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Horário de Funcionamento</h3>
+                    <ul class="hours-list">
+                        <li><strong>Seg - Sex:</strong> 07:00 - 19:00 (Obrigação)</li>
+                        <li><strong>Sábado:</strong> 09:00 - 14:00 (Ressaca)</li>
+                        <li><strong>Domingo:</strong> Fechado pra lamentação</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="contact-form">
+                <h2>Mande um recado</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="nome">Quem é você?</label>
+                        <input type="text" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu e-mail</label>
+                        <input type="email" id="email" placeholder="pra.gente@ignorar.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Do que quer reclamar?</label>
+                        <textarea id="msg" rows="5" placeholder="Digita aí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-email">Enviar (Talvez)</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="../js/email.js"></script>
+
+
+<footer id="footer"></footer>
+
+<script>
+    fetch("../compartilhados/html/direitos.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+</script>
+
+</body>
+</html>

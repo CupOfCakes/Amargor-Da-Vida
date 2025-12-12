@@ -1,0 +1,180 @@
+/* --- ESPECÍFICO DO CARDÁPIO --- */
+.section-title {
+    font-size: 2rem;
+    color: var(--cafe-escuro);
+    margin-bottom: 25px;
+    border-left: 5px solid var(--vermelho-wendy);
+    padding-left: 15px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Empurra para o final do card */
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: var(--cor-texto);
+    font-weight: 700;
+}
+
+.btn-card {
+    /* --- Reset do botão padrão --- */
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    /* --- Estilo Visual --- */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+
+    /* Cores e Borda */
+    color: var(--vermelho-wendy); /* Usando a variável que criamos */
+    border: 2px solid var(--vermelho-wendy);
+    border-radius: 30px; /* Borda redonda estilo Wendy's */
+    padding: 8px 20px;
+
+    /* Animação */
+    transition: all 0.3s ease;
+    margin-left: 10px; /* Um espacinho do preço se estiverem lado a lado */
+}
+
+/* Quando passa o mouse */
+.btn-card:hover {
+    background-color: var(--vermelho-wendy);
+    color: white;
+    box-shadow: 0 4px 10px rgba(198, 40, 40, 0.4); /* Brilho vermelho */
+    transform: translateY(-2px); /* Sobe um pouquinho */
+}
+
+/* Quando clica */
+.btn-card:active {
+    transform: translateY(1px); /* Afunda */
+    box-shadow: none;
+}
+
+/* --- ESTILO DA TABELA DO CARRINHO --- */
+
+.carrinho-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 320px; /* Um pouco mais largo pra caber tudo */
+    background: #fff;
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Sombra chique */
+    padding: 20px;
+    z-index: 9999;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgba(0,0,0,0.05);
+    animation: subirSuave 0.3s ease-out;
+}
+
+/* Animaçãozinha de entrada */
+@keyframes subirSuave {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.carrinho-flutuante h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--cafe-escuro);
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--vermelho-wendy);
+    display: block;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* --- TABELA DENTRO DO CARRINHO --- */
+#tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+#tabela-carrinho th {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #999;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    text-align: center; /* Centraliza cabeçalhos */
+}
+
+#tabela-carrinho td {
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    vertical-align: middle;
+}
+
+/* Ajustes finos das colunas */
+#tabela-carrinho td:first-child { text-align: left; width: 50%; } /* Nome */
+#tabela-carrinho td:nth-child(2) { text-align: center; color: #666; } /* Qtd */
+#tabela-carrinho td:nth-child(3) { text-align: right; font-weight: bold; } /* Preço */
+
+/* --- RODAPÉ DO CARRINHO --- */
+.resumo-carrinho {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+#total strong {
+    color: var(--vermelho-wendy);
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* --- BOTÃO FINALIZAR --- */
+#finalizar {
+    width: 100%;
+    background-color: var(--cafe-escuro);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#finalizar:hover {
+    background-color: var(--vermelho-wendy);
+}
+
+/* --- BOTÃO DE REMOVER (Aquele css anterior, ajustado pra tabela pequena) --- */
+.remover-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #ffcdd2;
+    color: #e53935;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Empurra pra direita */
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0;
+}
+
+.remover-item:hover {
+    background: #e53935;
+    color: white;
+    border-color: #e53935;
+}
+

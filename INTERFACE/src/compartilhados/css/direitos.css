@@ -1,0 +1,9 @@
+/* --- FOOTER --- */
+footer {
+    background-color: var(--cafe-escuro);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: auto; /* Empurra footer pro final da tela */
+    font-size: 0.9rem;
+}

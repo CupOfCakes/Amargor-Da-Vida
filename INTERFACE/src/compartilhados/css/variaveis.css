@@ -1,0 +1,14 @@
+:root {
+    /* Paleta de Cores */
+    --cor-fundo: #f9f7f5; /* Creme quase branco */
+    --cor-texto: #2c2c2c;
+    --cafe-escuro: #3e2723;
+    --cafe-medio: #5d4037;
+    --vermelho-wendy: #c62828; /* O vermelho clássico */
+    --vermelho-hover: #b71c1c;
+    --cinza-claro: #e0e0e0;
+
+    /* Sombras */
+    --sombra-card: 0 4px 15px rgba(0,0,0,0.08);
+    --sombra-hover: 0 8px 25px rgba(0,0,0,0.12);
+}

@@ -1,0 +1,21 @@
+/* Hero Section */
+.hero {
+    /* Idealmente aqui vai uma imagem de fundo escura */
+    background-image: url("../assets/images/home/hero.jpg");
+    background-size: cover;      /* faz a imagem preencher tudo */
+    background-position: center; /* foca no meio da imagem */
+    background-repeat: no-repeat;
+}
+
+/* Grid de Destaques */
+.menu-destaques {
+    padding: 60px 0;
+    color: var(--cafe-escuro);
+}
+
+.menu-destaques h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3b2f2f;
+}
