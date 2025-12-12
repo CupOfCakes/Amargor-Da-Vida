@@ -1,0 +1,109 @@
+{
+  "cardapio": {
+    "cafes": [
+      {
+        "id": 1,
+        "nome": "Espresso Existencial",
+        "descricao": "Curto, grosso e te acorda pra realidade. Acaba rápido, igual seu salário.",
+        "preco": 8.00,
+        "imagem": "/static/images/Expresso-Existencial.jpg"
+      },
+      {
+        "id": 2,
+        "nome": "Americano Aguado",
+        "descricao": "Um espresso que desistiu de lutar. Basicamente água suja gourmet.",
+        "preco": 10.00,
+        "imagem": "americano.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "Latte Morno",
+        "descricao": "Muito leite pra tentar disfarçar o amargor da vida. Já vem na temperatura ambiente.",
+        "preco": 14.00,
+        "imagem": "latte.jpg"
+      },
+      {
+        "id": 4,
+        "nome": "Coadão da Firma",
+        "descricao": "Aquele gosto de segunda-feira, servido em qualquer dia da semana.",
+        "preco": 5.00,
+        "imagem": "/static/images/Coadão-da-Firma.jpg"
+      },
+      {
+        "id": 10,
+        "nome": "Mocha Melancólico",
+        "descricao": "Chocolate e café juntos, para quando a vida está doce e amarga ao mesmo tempo.",
+        "preco": 13.00,
+        "imagem": "/static/images/mocha-melancolico.jpg"
+      },
+      {
+        "id": 11,
+        "nome": "Cappuccino da Insônia",
+        "descricao": "Acorda você mesmo quando o sono não quer ir embora.",
+        "preco": 11.00,
+        "imagem": "/static/images/cappuccino-insomnia.jpg"
+      },
+      {
+        "id": 12,
+        "nome": "Café preto",
+        "descricao": "agressivo, mas reconfortante.",
+        "preco": 11.00,
+        "imagem": "/static/images/cappuccino-insomnia.jpg"
+      }
+    ],
+    "comidas": [
+      {
+        "id": 5,
+        "nome": "Pão de Queijo Murcho",
+        "descricao": "Parece borracha, mas engana a fome. O melhor que temos pra hoje.",
+        "preco": 7.50,
+        "imagem": "pao_queijo.jpg"
+      },
+      {
+        "id": 6,
+        "nome": "Misto Frio",
+        "descricao": "O queijo nem derreteu direito e o presunto é duvidoso.",
+        "preco": 18.00,
+        "imagem": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Freceitasdepesos.com.br%2Fwp-content%2Fuploads%2F2023%2F12%2Fsanduiche-de-presunto-e-queijo-grelhado.jpg.webp&sp=1765232426T6e5807ca2ba918f19db936052efbeae079fd4f12c302150e3f709dc52ca74062"
+      },
+      {
+        "id": 7,
+        "nome": "Croissant Vazio",
+        "descricao": "Vazio por dentro, igual a gente. Faz uma sujeira desgraçada.",
+        "preco": 15.00,
+        "imagem": "croissant.jpg"
+      },
+      {
+        "id": 13,
+        "nome": "Cookie Existencial",
+        "descricao": "Doce que faz você pensar se a sobremesa pode mudar sua vida, otimo junto do expresso existencial.",
+        "preco": 6.50,
+        "imagem": "/static/images/cookie-existencial.jpg"
+      },
+      {
+        "id": 14,
+        "nome": "Torta do Desafios",
+        "descricao": "Dificil de engolir, talvez algum dia fosse boa",
+        "preco": 15.00,
+        "imagem": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fstorage.googleapis.com%2Fimagens_videos_gou_cooking_prod%2Fproduction%2Fmesas%2F2020%2F11%2F796ed874-torta-seca-de-banana-com-doce-de-leite-_-tm-doce-de-leite-_-natalia-rios-_-baixa-3.jpg&sp=1765232607T338c08e255d35046a8b4e47d94403a034466c9983a855cf2469f2913ddf525bd"
+      }
+    ],
+    "sobremesas": [
+      {
+        "id": 8,
+        "nome": "Bolo de Ontem",
+        "descricao": "Tava melhor ontem, mas ainda dá pra comer. Acompanha uma dose de culpa.",
+        "preco": 12.00,
+        "imagem": "/static/images/Bolo-de-Ontem.jpg"
+      },
+      {
+        "id": 9,
+        "nome": "Brownie Seco",
+        "descricao": "Precisa de café pra descer, senão entala.",
+        "preco": 16.00,
+        "imagem": "brownie.jpg"
+      }
+
+    ]
+  }
+}
